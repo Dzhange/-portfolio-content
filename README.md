@@ -1,2 +1,2 @@
 # portfolio-content
-Content for the portfolio of SI539
+Content for the new personal website
