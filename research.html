@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- All of the meta data for the page belongs in the header tag -->
+<head>	
+	<title>Research</title>
+</head>
+
+<body>
+	<header>
+        <nav>
+            <ul>
+				<li class="active"><a href="index.html">Home</a></li>
+				<li class="active"><a href="gallery.html">Gallery</a></li>
+				<li class="active"><a href="research.html">Research</a></li>
+				<li class="active"><a href="projects.html">Projects</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+        <p>
+            We present StrobeNet, a method for category-level 3D reconstruction of articulating objects from one or more RGB images. 
+            Reconstructing general articulating object categories has important applications, 
+            but is challenging since objects can have wide variation in shape, appearance and topology. 
+            We address this problem by building on the idea of category-level articulation canonicalization 
+            mapping object observations to a canonical articulation which enables correspondence-free multiview aggregation. 
+            Our endto-end trainable neural network estimates feature-enriched canonical 3D point clouds, articulation joints, and part segmentation from one or more images. 
+            These intermediate estimates are used to generate an implicit function as the final shape reconstruction. 
+            Our approach can reconstruct objects even when they are observed in different articulations in images with large baselines,
+             and allows reconstruction of animatable 3D models of objects. Quantitative and qualitative evaluations on our new benchmark dataset demonstrate that our method is able to achieve high reconstruction accuracy, especially as more views are added.
+		</p>
+        <figure>
+			<img src="images/strobenet_teaser.png"  alt="The pipeline of StrobeNet"  width="500"/>
+			<figcaption>The pipeline of StrobeNet</figcaption>
+		</figure>
+
+		<p>
+            We present StrobeNet, a method for category-level 3D reconstruction of articulating objects from one or more RGB images. 
+            Reconstructing general articulating object categories has important applications, 
+            but is challenging since objects can have wide variation in shape, appearance and topology. 
+            We address this problem by building on the idea of category-level articulation canonicalization 
+            mapping object observations to a canonical articulation which enables correspondence-free multiview aggregation. 
+            Our endto-end trainable neural network estimates feature-enriched canonical 3D point clouds, articulation joints, and part segmentation from one or more images. 
+            These intermediate estimates are used to generate an implicit function as the final shape reconstruction. 
+            Our approach can reconstruct objects even when they are observed in different articulations in images with large baselines,
+             and allows reconstruction of animatable 3D models of objects. Quantitative and qualitative evaluations on our new benchmark dataset demonstrate that our method is able to achieve high reconstruction accuracy, especially as more views are added.
+		</p>
+        <figure>
+			<img src="images/strobenet_teaser.png"  alt="The pipeline of StrobeNet"  width="500"/>
+			<figcaption>The pipeline of StrobeNet</figcaption>
+		</figure>
+
+        <p>
+            We present a deformation correction technique called deep body deformation (DBD) to improve realism in skeletal animated human
+            characters. We observe despite heterogeneity of shape across the human body, deformations on specific body parts exhibit high coherence due to physiological constraints. 
+            We therefore design an autoencoder net-work to encode shape variations and learn deformations unique to each semantically meaningful body part. 
+            To enforce deformation consistency over the entire animation sequence, we further develop a temporal en-coding scheme based on LSTM. 
+            Compared with the state-of-the-art such as LBS and SMPL, shape deformations produced by our technique are more accurate and appear more natural and preserve rich details.
+		</p>
+		<figure>
+			<img src="images/dbd_pipeline.png"  alt="The pipeline of Deep Body Deformation"  width="500"/>
+			<figcaption>The pipeline of Deep Body Deformation</figcaption>
+		</figure>
+
+	</main>
+
+	<footer>
+		&copy; 2022
+	</footer>
+</body>
+</html>
