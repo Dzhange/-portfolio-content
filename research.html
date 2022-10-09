@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- All of the meta data for the page belongs in the header tag -->
-<head>	
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 	<title>Research</title>
 </head>
 
@@ -9,10 +13,10 @@
 	<header>
         <nav>
             <ul>
-				<li class="active"><a href="index.html">Home</a></li>
-				<li class="active"><a href="gallery.html">Gallery</a></li>
-				<li class="active"><a href="research.html">Research</a></li>
-				<li class="active"><a href="projects.html">Projects</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a class="active" href="research.html">Research</a></li>
+				<li><a href="projects.html">Projects</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -29,7 +33,7 @@
             This work has set the foundation for tracking general deformable objects with occlusion.
 		</p>
         <figure>
-			<img src="images/deformable_recon.png"  alt="The pipeline of Deformable Objects Reconstruction"  width="500"/>
+			<img class="pipeline" src="images/deformable_recon.png"  alt="The pipeline of Deformable Objects Reconstruction" />
 			<figcaption>The pipeline of Deformable Objects Reconstruction</figcaption>
 		</figure>
 
@@ -45,7 +49,7 @@
              and allows reconstruction of animatable 3D models of objects. Quantitative and qualitative evaluations on our new benchmark dataset demonstrate that our method is able to achieve high reconstruction accuracy, especially as more views are added.
 		</p>
         <figure>
-			<img src="images/strobenet_teaser.png"  alt="The pipeline of StrobeNet"  width="500"/>
+			<img class="pipeline" src="images/strobenet_teaser.png"  alt="The pipeline of StrobeNet"   />
 			<figcaption>The pipeline of StrobeNet</figcaption>
 		</figure>
 
@@ -57,7 +61,7 @@
             Compared with the state-of-the-art such as LBS and SMPL, shape deformations produced by our technique are more accurate and appear more natural and preserve rich details.
 		</p>
 		<figure>
-			<img src="images/dbd_pipeline.png"  alt="The pipeline of Deep Body Deformation"  width="500"/>
+			<img class="pipeline" src="images/dbd_pipeline.png"  alt="The pipeline of Deep Body Deformation"   />
 			<figcaption>The pipeline of Deep Body Deformation</figcaption>
 		</figure>
 
