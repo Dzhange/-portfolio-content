@@ -1,15 +1,17 @@
 .active {
-    color: gray;
+    color: rgb(26, 25, 25);
 } 
 
 img {
     display: block;
+    width: 30%;
+    border: 5px hidden;
+    padding: 2% 2%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 10px;
-    border: 5px hidden;
-    width: 30%;
+
 }
 
 img:hover{
