@@ -3,30 +3,38 @@
 <!-- All of the meta data for the page belongs in the header tag -->
 <head>	
 	
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MK7H2K229S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MK7H2K229S"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-MK7H2K229S');
+	</script>
 
-  gtag('config', 'G-MK7H2K229S');
-</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	
 	<title>Home</title>
+	<link rel="icon" type="image/png" href="./images/site_icon.png">
 </head>
 
 <body>
 	<header>
 		<nav>
-			<ul>
-				<li ><a class="active" href="index.html">Home</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="research.html">Research</a></li>
-				<li><a href="projects.html">Projects</a></li>
+			<ul class="nav_links">
+				<li><i class="fa fa-home"></i>  <a class="active" href="index.html">Home</a></li>
+				<li><i class="fa fa-camera"></i><a href="gallery.html">Gallery</a></li>
+				<li><i class="fa fa-flask"></i> <a href="research.html">Research</a></li>
+				<li><i class="fa fa-gear"></i>  <a href="projects.html">Projects</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -48,7 +56,7 @@
 		</p>
 
 		<figure>
-			<img src="images/profile.jpg" alt="My head">
+			<img src="images/profile.jpeg" style="width: 10%;" alt="My head">
 			<figcaption>This is me</figcaption>
 		</figure>
 

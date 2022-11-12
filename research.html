@@ -4,27 +4,34 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 	<title>Research</title>
+	<link rel="icon" type="image/png" href="./images/site_icon.png">
 </head>
 
 <body>
 	<header>
         <nav>
-            <ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a class="active" href="research.html">Research</a></li>
-				<li><a href="projects.html">Projects</a></li>
+            <ul  class="nav_links">
+				<li><i class="fa fa-home"></i>   <a href="index.html">Home</a></li>
+				<li><i class="fa fa-camera"></i> <a href="gallery.html">Gallery</a></li>
+				<li><i class="fa fa-flask"></i>  <a class="active" href="research.html">Research</a></li>
+				<li><i class="fa fa-gear"></i>   <a href="projects.html">Projects</a></li>
 			</ul>
 		</nav>
 	</header>
 
 
 	<main>
+		
 		<h1> Research </h1>
-        <p>
+		<p>
             Deformable Objects are hard to track, and even harder when they are partially under occlusion due to the ambi-
             guity caused by shape variation cased by interaction with other objects or itself. While existing model-based methods
             didn't explicitly model this ambiguity and only provides only single solution, 

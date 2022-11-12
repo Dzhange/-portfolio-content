@@ -1,4 +1,14 @@
-.active {
+@keyframes fade {
+    from {
+      opacity: 0;
+      }
+    to {
+      opacity: 1;
+      }
+  }
+
+
+p.active {
     color: black;
 } 
 
@@ -6,6 +16,10 @@ h1 {
     font-size: 32pt;
     padding-top: 3%;
     padding-bottom: 3%;
+}
+
+body {
+    font-family: 'Indie Flower', cursive;
 }
 
 img {
@@ -18,11 +32,14 @@ img {
     margin-top: 30px;
     margin-bottom: 10px;
 
+    animation-name: fade;
+    animation-duration: 1s;
+    height: auto;
 }
-
+/* 
 img:hover{
     width: 40%;
-}
+} */
 
 img.pipeline {
     display: block;
@@ -41,3 +58,54 @@ img.pipeline:hover{
 figure figcaption {
     text-align: center;
 }
+
+
+.nav_links {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+body {
+    background-image: url('images/nyc.jpg');
+}
+
+@media screen and (min-width: 1000px){
+
+    
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        justify-content: right;
+
+        font-size: 32px;
+    }
+    
+  
+    .card {
+      width: 300px;
+      height: auto;
+    }
+  
+    .gallery {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: auto;
+    }
+  }
+
+
+@media screen and (prefers-reduced-motion:reduce) {
+    #logo {
+      animation: none;
+    }
+  }
