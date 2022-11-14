@@ -8,38 +8,63 @@
   }
 
 
-p.active {
-    color: black;
+
+body {
+    background-image: url('../images/papper_bg.jpgj');
+    
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10% 70% 1fr;
+}
+
+header {
+  font-size: 200%;
+  grid-row: 1 / span 1;  
+}
+
+aside {
+  font-size: 150%;  
+  color: coral;
+  grid-row: 2 / span 1;
+}
+
+main {
+  grid-row: 3 / span 1;  
+}
+
+footer {
+  grid-row: 4 / span 1;  
+}
+
+main p {
+  font-size: 22pt;
 } 
 
 h1 {
-    font-size: 32pt;
-    padding-top: 3%;
-    padding-bottom: 3%;
+  font-size: 48pt;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
-body {
-    font-family: 'Indie Flower', cursive;
-}
 
 img {
     display: block;
     width: 30%;
-    border: 5px hidden;
-    padding: 2% 2%;
+    border: 2px hidden;
+    padding: 1% 1%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 30px;    
 
     animation-name: fade;
     animation-duration: 1s;
+
     height: auto;
 }
-/* 
-img:hover{
-    width: 40%;
-} */
+
 
 img.pipeline {
     display: block;
@@ -51,14 +76,14 @@ img.pipeline {
     width: 50%;
 }
 
-img.pipeline:hover{
+/* img.pipeline:hover{
     width: 60%;
-}
+} */
 
 figure figcaption {
     text-align: center;
+    font-size: 16pt;
 }
-
 
 .nav_links {
     display: flex;
@@ -67,39 +92,51 @@ figure figcaption {
     justify-content: space-between;
 }
 
-body {
-    background-image: url('images/nyc.jpg');
+
+#gallery_imgs {
+  display: flex;
+  flex-direction: column;
 }
 
-@media screen and (min-width: 1000px){
+
+@media screen and (min-width: 800px){
 
     
     .nav_links {
         display: flex;
         flex-direction: row;
         align-content: space-between;
-        justify-content: right;
+        justify-content: left;
 
         font-size: 32px;
     }
-    
-  
-    .card {
-      width: 300px;
-      height: auto;
-    }
-  
-    .gallery {
+      
+    #gallery_imgs {      
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
-      align-content: center;
-      justify-content: center;
+      flex-wrap: wrap;      
     }
 
-    .gallery img {
-      width: 300px;
+    #gallery_imgs img {
+      width: auto;
       height: auto;
+      max-width: 300px;
+      max-height: 300px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    
+    body {   
+      grid-template-columns: 5fr 1fr;
+    } 
+
+    header {   
+      grid-column: 1 / span 2;
+    } 
+
+    aside {     
+      grid-column: 2 / span 1;  
     }
   }
 
