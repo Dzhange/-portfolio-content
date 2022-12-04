@@ -17,7 +17,9 @@ body {
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 10% 70% 1fr;
+    grid-template-rows: 10% 10% 75% 1fr;
+    
+    column-gap: 30px;
 }
 
 header {
@@ -26,13 +28,14 @@ header {
 }
 
 aside {
-  font-size: 150%;  
+  font-size: 100%;  
   color: coral;
   grid-row: 2 / span 1;
 }
 
 main {
   grid-row: 3 / span 1;  
+  overflow-y: auto;
 }
 
 footer {
@@ -40,11 +43,11 @@ footer {
 }
 
 main p {
-  font-size: 22pt;
+  font-size: 22px;
 } 
 
 h1 {
-  font-size: 48pt;
+  font-size: 48px;
   padding-top: 3%;
   padding-bottom: 3%;
 }
@@ -82,7 +85,7 @@ img.pipeline {
 
 figure figcaption {
     text-align: center;
-    font-size: 16pt;
+    font-size: 16px;
 }
 
 .nav_links {
@@ -90,14 +93,43 @@ figure figcaption {
     flex-direction: row;
     align-content: space-between;
     justify-content: space-between;
+    color: darkslategrey;
 }
 
+
+a:link {
+  color: darkslategrey;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: darkslategrey;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {  
+  color: darkslategrey;
+  text-decoration: underline;
+}
+
+/* selected link */
+/* a:active {
+  color: black;
+  text-decoration: underline;
+} */
+
+a.active {
+  font-size: 130%;
+  color: black;
+  text-decoration: underline;
+}
 
 #gallery_imgs {
   display: flex;
   flex-direction: column;
 }
-
 
 @media screen and (min-width: 800px){
 
@@ -106,7 +138,7 @@ figure figcaption {
         display: flex;
         flex-direction: row;
         align-content: space-between;
-        justify-content: left;
+        justify-content: center;
 
         font-size: 32px;
     }
@@ -114,7 +146,7 @@ figure figcaption {
     #gallery_imgs {      
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;      
+      flex-wrap: wrap;
     }
 
     #gallery_imgs img {
@@ -126,19 +158,58 @@ figure figcaption {
       padding-right: 20px;
     }
 
-    
-    body {   
-      grid-template-columns: 5fr 1fr;
+
+    body {
+      grid-template-columns: 4fr 1fr;
     } 
 
-    header {   
+    header {
       grid-column: 1 / span 2;
     } 
 
     aside {     
       grid-column: 2 / span 1;  
     }
+ }
+
+
+ @media screen and (min-width: 1000px){
+  
+  .nav_links {
+      display: flex;
+      flex-direction: row;
+      align-content: space-between;
+      justify-content: left;
+      font-size: 32px;
   }
+    
+  #gallery_imgs {      
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #gallery_imgs img {
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  body {
+    grid-template-columns: 8fr 1fr;
+  } 
+
+  header {
+    grid-column: 1 / span 2;
+  } 
+
+  aside {     
+    grid-column: 2 / span 1;  
+  }
+}
 
 
 @media screen and (prefers-reduced-motion:reduce) {

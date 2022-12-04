@@ -25,6 +25,16 @@
 	
 	<title>Home</title>
 	<link rel="icon" type="image/png" href="./images/site_icon.png">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-S5XXR4QHKB"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-S5XXR4QHKB');
+	</script>
 </head>
 
 <body>
@@ -37,18 +47,16 @@
 				<li><i class="fa fa-gear"></i>  <a href="projects.html">Projects</a></li>
 			</ul>
 		</nav>
+		<h1> HOME </h1>		
 	</header>
 	
 
-	<main>
-		<h1> Home </h1>
+	<main>		
 		<p>
 			I'm Ge Zhang, a second-year master student in Electrical and Computer Engineering - Computer Vision at University of Michigan. 
-			I finished my undergrad at ShanghaiTech University. I've also spent some time researching at Stanford University.
-			The goal of my research is to build a happier world with intelligent machines. During the past years I worked on computer vision&graphics, 
-			and since last year I've been working on designing perception algorithm for robots.			
+			I finished my undergrad at ShanghaiTech University. During the past years I worked on computer vision&graphics, 
+			and since last year I've been working on designing perception algorithm for robots.
 		</p>
-
         <p>
 			I love rock climbing, playing drums, and all forms of visual arts. I'm currently a member of UMich climbing club, and I climb regularly at Planet Rock.
 			My favorite rock band is ACDC, my favorite ice cream flavor is rum and rasin, and my favorite drink is diet pepsi(yes, not coke).
@@ -65,6 +73,22 @@
 	<aside>
 		<p>I'm looking for a job right now. If you know any open positions of Software Engineer/Computer Vision/Robotics that fit my background, 
 			plase contact me at zge@umich.edu</p>
+		
+		<form
+			action="https://formspree.io/f/mnqreakl"
+			method="POST"
+			>
+			<label>
+				Your email:
+				<input type="email" name="email">
+			</label>
+			<label>
+				Your message:
+				<textarea name="message"></textarea>
+			</label>
+			<!-- your other form fields go here -->
+			<button type="submit">Send</button>
+		</form>
 	</aside>
 
 	<footer>

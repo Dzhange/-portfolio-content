@@ -21,6 +21,17 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<title>Gallery</title>
 	<link rel="icon" type="image/png" href="./images/site_icon.png">
+
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-S5XXR4QHKB"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-S5XXR4QHKB');
+	</script>
 </head>
 
 
@@ -34,10 +45,11 @@
 				<li><i class="fa fa-gear"></i>  <a href="projects.html">Projects</a></li>
 			</ul>
 		</nav>
+		<h1> GALLERY </h1>
 	</header>
 	
 	<main>
-		<h1> Gallery </h1>
+		
 		<div id="gallery_imgs">
 			<figure>
 				<img src="images/buddha_sculpture.png"  alt="Rock carved with one thousand of Buddha. @Nanjing">
@@ -105,6 +117,22 @@
 	<aside>
 		<p>I'm looking for a job right now. If you know any open positions of Software Engineer/Computer Vision/Robotics that fit my background, 
 			plase contact me at zge@umich.edu</p>
+
+		<form
+			action="https://formspree.io/f/mnqreakl"
+			method="POST"
+			>
+			<label>
+				Your email:
+				<input type="email" name="email">
+			</label>
+			<label>
+				Your message:
+				<textarea name="message"></textarea>
+			</label>
+			<!-- your other form fields go here -->
+			<button type="submit">Send</button>
+		</form>
 	</aside>
 
 	<footer>
